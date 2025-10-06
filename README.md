@@ -1,68 +1,44 @@
 # Rollback Multiverse
 
-A research repository implementing quantum-inspired branching and collapse for speculative futures with AI prediction and temporal reasoning.
+A research framework for exploring quantum-inspired branching and rollback reconciliation in deterministic simulations.
 
-## Features
+## Quickstart
 
-- **Quantum-inspired branching**: Simulate multiple possible futures without real quantum hardware
-- **AI prediction**: Temporal reasoning with rollback reconciliation
-- **Deterministic simulation**: Explicit reconciliation by action arrival timestamps
-- **Reproducible experiments**: CSV outputs and JSON summaries
+```bash
+pip install -r requirements.txt
+python -m src.experiments.run_experiments
+```
 
 ## Project Structure
 
 ```
 rollback-multiverse/
 ├── src/
-│   ├── __init__.py
-│   ├── quantum_branching.py      # Quantum-inspired branching system
-│   ├── ai_prediction.py          # AI prediction and temporal reasoning
-│   ├── rollback_reconciliation.py # Rollback reconciliation system
-│   ├── simulation_core.py        # Deterministic simulation core
-│   └── visualization.py          # Matplotlib plotting utilities
-├── experiments/
-│   ├── __init__.py
-│   ├── basic_branching.py        # Basic branching experiment
-│   ├── prediction_accuracy.py    # AI prediction accuracy test
-│   └── rollback_performance.py   # Rollback reconciliation performance
-├── results/                      # Generated experiment outputs
-├── tests/
-│   ├── __init__.py
-│   ├── test_quantum_branching.py
-│   ├── test_ai_prediction.py
-│   └── test_rollback_reconciliation.py
-├── requirements.txt
-└── setup.py
+│   ├── environments.py      # OneHPDuel, GridworldChase environments
+│   ├── quantum_branching.py # AmplitudeBrancher implementation
+│   ├── predictive_agent.py  # PredictiveAgent with quantum hypotheses
+│   ├── rollback_engine.py   # RollbackReconciler for latency simulation
+│   ├── metrics.py           # Performance and accuracy metrics
+│   └── experiments/         # Experiment configurations and runners
+├── notebooks/               # Jupyter notebooks for analysis
+└── results/                 # Experiment outputs
 ```
 
-## Installation
+## Key Metrics
 
-```bash
-pip install -r requirements.txt
-```
+- **Rollback Rate**: Frequency of rollback events per simulation
+- **Prediction Accuracy**: Correctness of opponent action predictions
+- **Entropy Evolution**: Shannon entropy of quantum amplitude distributions
+- **Latency Impact**: Performance degradation under network delays
 
-## Usage
+## Experiment Matrix
 
-Run experiments:
-```bash
-python -m experiments.basic_branching
-python -m experiments.prediction_accuracy
-python -m experiments.rollback_performance
-```
+| Environment | Latency (ms) | Jitter (ms) | Rollback Rate | Notes |
+|-------------|--------------|-------------|---------------|-------|
+| OneHPDuel   | 30           | 5           | Baseline      | 1 HP double-KO |
+| OneHPDuel   | 100          | 20          | High          | Network stress |
+| Gridworld   | 30           | 5           | Spatial       | Chase dynamics |
 
-## Core Concepts
+## Optional: Qiskit Integration
 
-### Quantum-inspired Branching
-- Simulates multiple possible futures simultaneously
-- Each branch represents a different outcome probability
-- Collapse occurs when definitive information arrives
-
-### AI Prediction & Temporal Reasoning
-- Predicts future states based on current information
-- Maintains confidence intervals and uncertainty
-- Updates predictions as new information arrives
-
-### Rollback Reconciliation
-- Corrects predictions when truth arrives
-- Uses timestamp-based ordering for deterministic results
-- Maintains audit trail of all corrections
+For quantum hardware experiments, install qiskit and use `notebooks/04_qiskit_mapping.ipynb` to map amplitude distributions to quantum circuits.
