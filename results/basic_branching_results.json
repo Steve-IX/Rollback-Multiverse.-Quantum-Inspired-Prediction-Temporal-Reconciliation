@@ -1,0 +1,148 @@
+{
+  "experiment_name": "basic_branching",
+  "timestamp": "2025-10-06T13:44:33.651942",
+  "initial_state": [
+    1.0,
+    0.0
+  ],
+  "initial_summary": {
+    "num_branches": 4,
+    "is_collapsed": false,
+    "entropy": 1.9739603199749651,
+    "branches": [
+      {
+        "id": "ca667ee9-d200-4ac2-998f-29d727985d25",
+        "probability": 0.294,
+        "state_norm": 1.0,
+        "timestamp": "2025-10-06T13:44:33.650065",
+        "metadata": {}
+      },
+      {
+        "id": "d202848c-017a-40d2-ba6d-1cfc47b3ff64",
+        "probability": 0.19599999999999998,
+        "state_norm": 0.7615773105863908,
+        "timestamp": "2025-10-06T13:44:33.650097",
+        "metadata": {
+          "scenario": "bull_market"
+        }
+      },
+      {
+        "id": "c3ded15e-28ec-4ea0-9836-f321f684ac90",
+        "probability": 0.21,
+        "state_norm": 0.7615773105863908,
+        "timestamp": "2025-10-06T13:44:33.650114",
+        "metadata": {
+          "scenario": "bear_market"
+        }
+      },
+      {
+        "id": "71a14cc9-258a-444d-9fdb-fbf8be6e4dce",
+        "probability": 0.3,
+        "state_norm": 0.7071067811865476,
+        "timestamp": "2025-10-06T13:44:33.650129",
+        "metadata": {
+          "scenario": "stable_market"
+        }
+      }
+    ],
+    "measurements": []
+  },
+  "evolved_summary": {
+    "num_branches": 4,
+    "is_collapsed": false,
+    "entropy": 1.9739603199749651,
+    "branches": [
+      {
+        "id": "ca667ee9-d200-4ac2-998f-29d727985d25",
+        "probability": 0.294,
+        "state_norm": 1.0,
+        "timestamp": "2025-10-06T13:44:33.650065",
+        "metadata": {}
+      },
+      {
+        "id": "d202848c-017a-40d2-ba6d-1cfc47b3ff64",
+        "probability": 0.19599999999999998,
+        "state_norm": 0.7424284477308234,
+        "timestamp": "2025-10-06T13:44:33.651796",
+        "metadata": {
+          "scenario": "bull_market"
+        }
+      },
+      {
+        "id": "c3ded15e-28ec-4ea0-9836-f321f684ac90",
+        "probability": 0.21,
+        "state_norm": 0.7424284477308234,
+        "timestamp": "2025-10-06T13:44:33.651814",
+        "metadata": {
+          "scenario": "bear_market"
+        }
+      },
+      {
+        "id": "71a14cc9-258a-444d-9fdb-fbf8be6e4dce",
+        "probability": 0.3,
+        "state_norm": 0.7071067811865476,
+        "timestamp": "2025-10-06T13:44:33.651819",
+        "metadata": {
+          "scenario": "stable_market"
+        }
+      }
+    ],
+    "measurements": []
+  },
+  "final_summary": {
+    "num_branches": 1,
+    "is_collapsed": true,
+    "entropy": 0.0,
+    "branches": [
+      {
+        "id": "71a14cc9-258a-444d-9fdb-fbf8be6e4dce",
+        "probability": 0.3,
+        "state_norm": 0.7071067811865476,
+        "timestamp": "2025-10-06T13:44:33.651819",
+        "metadata": {
+          "scenario": "stable_market"
+        }
+      }
+    ],
+    "measurements": [
+      {
+        "timestamp": "2025-10-06T13:44:33.651895",
+        "observable": "market_trend",
+        "value": "bull_market",
+        "uncertainty": 0.1
+      }
+    ]
+  },
+  "evolution_matrix": [
+    [
+      0.9,
+      0.1
+    ],
+    [
+      0.1,
+      0.9
+    ]
+  ],
+  "branches_created": [
+    {
+      "id": "d202848c-017a-40d2-ba6d-1cfc47b3ff64",
+      "scenario": "bull_market",
+      "probability": 0.4
+    },
+    {
+      "id": "c3ded15e-28ec-4ea0-9836-f321f684ac90",
+      "scenario": "bear_market",
+      "probability": 0.3
+    },
+    {
+      "id": "71a14cc9-258a-444d-9fdb-fbf8be6e4dce",
+      "scenario": "stable_market",
+      "probability": 0.3
+    }
+  ],
+  "measurement": {
+    "observable": "market_trend",
+    "value": "bull_market",
+    "uncertainty": 0.1
+  }
+}

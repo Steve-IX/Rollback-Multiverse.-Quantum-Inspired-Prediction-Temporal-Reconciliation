@@ -1,0 +1,153 @@
+{
+  "experiment_name": "comprehensive_example",
+  "timestamp": "2025-10-06T13:44:52.837550",
+  "system_metrics": {
+    "quantum_system": {
+      "entropy": 0.0,
+      "num_branches": 1,
+      "is_collapsed": true
+    },
+    "prediction_engine": {
+      "num_observations": 11,
+      "num_predictions": 3,
+      "available_models": [
+        "linear_trend",
+        "exponential_smoothing"
+      ]
+    },
+    "reconciliation_system": {
+      "total_actions": 12,
+      "corrected_actions": 3,
+      "reconciliation_events": 3,
+      "rollback_stack_size": 3,
+      "temporal_consistency_warnings": [],
+      "action_types": {
+        "prediction": 3,
+        "observation": 5,
+        "correction": 0,
+        "branch_create": 3,
+        "branch_collapse": 1
+      },
+      "recent_actions": [
+        {
+          "id": "00cecbe4-17c3-4f94-9914-700b3887c42d",
+          "timestamp": "2025-10-06T14:24:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "c0037f5d-8329-48f4-9314-40472c89e9f1",
+          "timestamp": "2025-10-06T14:14:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "a6b61518-f81e-4832-b610-89a0f1a21d2f",
+          "timestamp": "2025-10-06T14:04:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "b9d33a16-a174-438e-99ae-ccc8319e7093",
+          "timestamp": "2025-10-06T13:54:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "ee9d235a-99e5-43a8-926d-f46070ef6ffb",
+          "timestamp": "2025-10-06T13:44:50.286187",
+          "type": "branch_collapse",
+          "corrected": false
+        },
+        {
+          "id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+          "timestamp": "2025-10-06T13:44:50.285607",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+          "timestamp": "2025-10-06T13:44:50.285420",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+          "timestamp": "2025-10-06T13:44:50.285146",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "7a5be23c-5949-4a44-b74d-741d5a09a549",
+          "timestamp": "2025-10-06T13:44:50.283097",
+          "type": "branch_create",
+          "corrected": false
+        },
+        {
+          "id": "2f6b2bbf-f281-4e5e-b375-17b62294a378",
+          "timestamp": "2025-10-06T13:44:50.283064",
+          "type": "branch_create",
+          "corrected": false
+        }
+      ],
+      "recent_reconciliations": [
+        {
+          "id": "bbd8d4b6-acc0-4466-806e-8e591f3a3518",
+          "timestamp": "2025-10-06T13:44:50.286016",
+          "original_action_id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+          "reason": "truth_arrived"
+        },
+        {
+          "id": "e3b80198-f8d6-4882-a448-76ad0f53e13f",
+          "timestamp": "2025-10-06T13:44:50.285847",
+          "original_action_id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+          "reason": "truth_arrived"
+        },
+        {
+          "id": "227bc674-159e-4796-98ee-d63c92bb1714",
+          "timestamp": "2025-10-06T13:44:50.285653",
+          "original_action_id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+          "reason": "truth_arrived"
+        }
+      ]
+    },
+    "simulation": {
+      "total_events": 14,
+      "simulation_duration": 0.006494,
+      "event_types": {
+        "prediction": 3,
+        "reconciliation": 2,
+        "observation": 5,
+        "branch_create": 3,
+        "branch_collapse": 1
+      }
+    },
+    "timestamp": "2025-10-06T13:44:50.286343"
+  },
+  "branches_created": [
+    {
+      "id": "bba20d83",
+      "scenario": "bull_market",
+      "probability": 0.4
+    },
+    {
+      "id": "49f03b6f",
+      "scenario": "bear_market",
+      "probability": 0.3
+    },
+    {
+      "id": "6966c2c1",
+      "scenario": "stable_market",
+      "probability": 0.3
+    }
+  ],
+  "predictions_made": 3,
+  "reconciliations_performed": 3,
+  "measurement_outcome": "bull_market",
+  "rollback_operations": 1,
+  "collapsed_branch": {
+    "id": "6966c2c1",
+    "scenario": "stable_market",
+    "probability": 0.3
+  }
+}

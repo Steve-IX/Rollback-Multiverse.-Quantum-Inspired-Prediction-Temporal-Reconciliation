@@ -1,0 +1,490 @@
+{
+  "simulation_metrics": {
+    "quantum_system": {
+      "entropy": 0.0,
+      "num_branches": 1,
+      "is_collapsed": true
+    },
+    "prediction_engine": {
+      "num_observations": 11,
+      "num_predictions": 3,
+      "available_models": [
+        "linear_trend",
+        "exponential_smoothing"
+      ]
+    },
+    "reconciliation_system": {
+      "total_actions": 12,
+      "corrected_actions": 3,
+      "reconciliation_events": 3,
+      "rollback_stack_size": 3,
+      "temporal_consistency_warnings": [],
+      "action_types": {
+        "prediction": 3,
+        "observation": 5,
+        "correction": 0,
+        "branch_create": 3,
+        "branch_collapse": 1
+      },
+      "recent_actions": [
+        {
+          "id": "00cecbe4-17c3-4f94-9914-700b3887c42d",
+          "timestamp": "2025-10-06T14:24:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "c0037f5d-8329-48f4-9314-40472c89e9f1",
+          "timestamp": "2025-10-06T14:14:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "a6b61518-f81e-4832-b610-89a0f1a21d2f",
+          "timestamp": "2025-10-06T14:04:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "b9d33a16-a174-438e-99ae-ccc8319e7093",
+          "timestamp": "2025-10-06T13:54:50.279703",
+          "type": "observation",
+          "corrected": false
+        },
+        {
+          "id": "ee9d235a-99e5-43a8-926d-f46070ef6ffb",
+          "timestamp": "2025-10-06T13:44:50.286187",
+          "type": "branch_collapse",
+          "corrected": false
+        },
+        {
+          "id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+          "timestamp": "2025-10-06T13:44:50.285607",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+          "timestamp": "2025-10-06T13:44:50.285420",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+          "timestamp": "2025-10-06T13:44:50.285146",
+          "type": "prediction",
+          "corrected": true
+        },
+        {
+          "id": "7a5be23c-5949-4a44-b74d-741d5a09a549",
+          "timestamp": "2025-10-06T13:44:50.283097",
+          "type": "branch_create",
+          "corrected": false
+        },
+        {
+          "id": "2f6b2bbf-f281-4e5e-b375-17b62294a378",
+          "timestamp": "2025-10-06T13:44:50.283064",
+          "type": "branch_create",
+          "corrected": false
+        }
+      ],
+      "recent_reconciliations": [
+        {
+          "id": "bbd8d4b6-acc0-4466-806e-8e591f3a3518",
+          "timestamp": "2025-10-06T13:44:50.286016",
+          "original_action_id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+          "reason": "truth_arrived"
+        },
+        {
+          "id": "e3b80198-f8d6-4882-a448-76ad0f53e13f",
+          "timestamp": "2025-10-06T13:44:50.285847",
+          "original_action_id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+          "reason": "truth_arrived"
+        },
+        {
+          "id": "227bc674-159e-4796-98ee-d63c92bb1714",
+          "timestamp": "2025-10-06T13:44:50.285653",
+          "original_action_id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+          "reason": "truth_arrived"
+        }
+      ]
+    },
+    "simulation": {
+      "total_events": 14,
+      "simulation_duration": 0.006494,
+      "event_types": {
+        "prediction": 3,
+        "reconciliation": 2,
+        "observation": 5,
+        "branch_create": 3,
+        "branch_collapse": 1
+      }
+    },
+    "timestamp": "2025-10-06T13:44:52.835653"
+  },
+  "quantum_system_summary": {
+    "num_branches": 1,
+    "is_collapsed": true,
+    "entropy": 0.0,
+    "branches": [
+      {
+        "id": "6966c2c1-7060-4123-89b6-712e8cba683f",
+        "probability": 0.3,
+        "state_norm": 0.7071067811865476,
+        "timestamp": "2025-10-06T13:44:50.283080",
+        "metadata": {
+          "scenario": "stable_market",
+          "confidence": 0.6
+        }
+      }
+    ],
+    "measurements": [
+      {
+        "timestamp": "2025-10-06T13:44:50.286170",
+        "observable": "market_trend",
+        "value": "bull_market",
+        "uncertainty": 0.09999999999999998
+      }
+    ]
+  },
+  "prediction_engine_summary": {
+    "num_observations": 11,
+    "num_predictions": 3,
+    "available_models": [
+      "linear_trend",
+      "exponential_smoothing"
+    ],
+    "model_parameters": {},
+    "prediction_horizon_seconds": 3600.0,
+    "recent_observations": [
+      {
+        "timestamp": "2025-10-06T15:26:50.279703",
+        "value": 14.445294233404157,
+        "uncertainty": 0.0,
+        "source": "truth"
+      },
+      {
+        "timestamp": "2025-10-06T15:56:50.279703",
+        "value": 16.579067536068123,
+        "uncertainty": 0.0,
+        "source": "truth"
+      },
+      {
+        "timestamp": "2025-10-06T15:44:50.279703",
+        "value": 15.0,
+        "uncertainty": 0.05,
+        "source": "post_collapse_sensor"
+      },
+      {
+        "timestamp": "2025-10-06T15:50:50.279703",
+        "value": 15.2,
+        "uncertainty": 0.05,
+        "source": "post_collapse_sensor"
+      },
+      {
+        "timestamp": "2025-10-06T15:56:50.279703",
+        "value": 15.4,
+        "uncertainty": 0.05,
+        "source": "post_collapse_sensor"
+      }
+    ],
+    "active_predictions": [
+      {
+        "id": "40bce72a-372b-44ff-9da4-a71bc66aff5a",
+        "target_time": "2025-10-06T14:44:50.279703",
+        "predicted_value": 12.648137831874525,
+        "uncertainty": 0.13712832185323717,
+        "confidence_level": 0.95
+      },
+      {
+        "id": "af4d9f9d-4fee-4e1a-9931-3638680d2b08",
+        "target_time": "2025-10-06T15:14:50.279703",
+        "predicted_value": 13.928389285946349,
+        "uncertainty": 0.13480045500007248,
+        "confidence_level": 0.95
+      },
+      {
+        "id": "fb4de10c-238a-4377-a029-fc462df8044d",
+        "target_time": "2025-10-06T15:44:50.279703",
+        "predicted_value": 15.75336975079111,
+        "uncertainty": 0.7687625049057673,
+        "confidence_level": 0.95
+      }
+    ]
+  },
+  "reconciliation_system_state": {
+    "total_actions": 12,
+    "corrected_actions": 3,
+    "reconciliation_events": 3,
+    "rollback_stack_size": 3,
+    "temporal_consistency_warnings": [],
+    "action_types": {
+      "prediction": 3,
+      "observation": 5,
+      "correction": 0,
+      "branch_create": 3,
+      "branch_collapse": 1
+    },
+    "recent_actions": [
+      {
+        "id": "00cecbe4-17c3-4f94-9914-700b3887c42d",
+        "timestamp": "2025-10-06T14:24:50.279703",
+        "type": "observation",
+        "corrected": false
+      },
+      {
+        "id": "c0037f5d-8329-48f4-9314-40472c89e9f1",
+        "timestamp": "2025-10-06T14:14:50.279703",
+        "type": "observation",
+        "corrected": false
+      },
+      {
+        "id": "a6b61518-f81e-4832-b610-89a0f1a21d2f",
+        "timestamp": "2025-10-06T14:04:50.279703",
+        "type": "observation",
+        "corrected": false
+      },
+      {
+        "id": "b9d33a16-a174-438e-99ae-ccc8319e7093",
+        "timestamp": "2025-10-06T13:54:50.279703",
+        "type": "observation",
+        "corrected": false
+      },
+      {
+        "id": "ee9d235a-99e5-43a8-926d-f46070ef6ffb",
+        "timestamp": "2025-10-06T13:44:50.286187",
+        "type": "branch_collapse",
+        "corrected": false
+      },
+      {
+        "id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+        "timestamp": "2025-10-06T13:44:50.285607",
+        "type": "prediction",
+        "corrected": true
+      },
+      {
+        "id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+        "timestamp": "2025-10-06T13:44:50.285420",
+        "type": "prediction",
+        "corrected": true
+      },
+      {
+        "id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+        "timestamp": "2025-10-06T13:44:50.285146",
+        "type": "prediction",
+        "corrected": true
+      },
+      {
+        "id": "7a5be23c-5949-4a44-b74d-741d5a09a549",
+        "timestamp": "2025-10-06T13:44:50.283097",
+        "type": "branch_create",
+        "corrected": false
+      },
+      {
+        "id": "2f6b2bbf-f281-4e5e-b375-17b62294a378",
+        "timestamp": "2025-10-06T13:44:50.283064",
+        "type": "branch_create",
+        "corrected": false
+      }
+    ],
+    "recent_reconciliations": [
+      {
+        "id": "bbd8d4b6-acc0-4466-806e-8e591f3a3518",
+        "timestamp": "2025-10-06T13:44:50.286016",
+        "original_action_id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72",
+        "reason": "truth_arrived"
+      },
+      {
+        "id": "e3b80198-f8d6-4882-a448-76ad0f53e13f",
+        "timestamp": "2025-10-06T13:44:50.285847",
+        "original_action_id": "6590720d-d65b-4cb0-a502-c4cae1c83634",
+        "reason": "truth_arrived"
+      },
+      {
+        "id": "227bc674-159e-4796-98ee-d63c92bb1714",
+        "timestamp": "2025-10-06T13:44:50.285653",
+        "original_action_id": "4d421c91-491b-4225-afc6-c797b91cd38e",
+        "reason": "truth_arrived"
+      }
+    ]
+  },
+  "recent_events": [
+    {
+      "id": "dd737c49-b5c5-4dd0-ba05-c0ef42c822c2",
+      "timestamp": "2025-10-06T13:44:50.279703",
+      "type": "observation",
+      "source": "sensor_1",
+      "data": {
+        "value": 9.949799592424258,
+        "uncertainty": 0.1,
+        "source": "sensor_1",
+        "action_id": "cd54030c-18e1-4337-94e1-bc3549ea25b0",
+        "observation_id": "8cc1f7d8-4bde-4094-928b-567220a6b56e"
+      }
+    },
+    {
+      "id": "cc678d7b-31fc-406a-acaa-07efcef6b20c",
+      "timestamp": "2025-10-06T13:54:50.279703",
+      "type": "observation",
+      "source": "sensor_1",
+      "data": {
+        "value": 10.645478947840036,
+        "uncertainty": 0.1,
+        "source": "sensor_1",
+        "action_id": "b9d33a16-a174-438e-99ae-ccc8319e7093",
+        "observation_id": "42d64ee4-8609-432c-96b6-fd85bae655b3"
+      }
+    },
+    {
+      "id": "4d64c235-cfbc-4cfe-88ef-4de54992b5c2",
+      "timestamp": "2025-10-06T14:04:50.279703",
+      "type": "observation",
+      "source": "sensor_1",
+      "data": {
+        "value": 10.893952212982523,
+        "uncertainty": 0.1,
+        "source": "sensor_1",
+        "action_id": "a6b61518-f81e-4832-b610-89a0f1a21d2f",
+        "observation_id": "1fd9100c-b1d6-41c2-9efc-3d5fd5d6cdc0"
+      }
+    },
+    {
+      "id": "8ce97e92-ed25-46db-8fca-701e27a1aa54",
+      "timestamp": "2025-10-06T14:14:50.279703",
+      "type": "observation",
+      "source": "sensor_1",
+      "data": {
+        "value": 11.427907334115389,
+        "uncertainty": 0.1,
+        "source": "sensor_1",
+        "action_id": "c0037f5d-8329-48f4-9314-40472c89e9f1",
+        "observation_id": "1e420b07-10a9-41a4-8106-6247275fbe51"
+      }
+    },
+    {
+      "id": "c61cf6cf-0142-4e3d-86bf-a07e95fcbe20",
+      "timestamp": "2025-10-06T14:24:50.279703",
+      "type": "observation",
+      "source": "sensor_1",
+      "data": {
+        "value": 12.062666143757147,
+        "uncertainty": 0.1,
+        "source": "sensor_1",
+        "action_id": "00cecbe4-17c3-4f94-9914-700b3887c42d",
+        "observation_id": "d7d0281a-12df-44ca-ac6b-be340bcabbdd"
+      }
+    },
+    {
+      "id": "a6581ff2-5e3d-4614-a976-bc74aa4e987c",
+      "timestamp": "2025-10-06T13:44:50.283044",
+      "type": "branch_create",
+      "source": "quantum_system",
+      "data": {
+        "branch_id": "bba20d83-addd-4c0c-912c-60040d649e78",
+        "probability": 0.4,
+        "action_id": "20b8a89c-55d9-4266-89a5-c9e4cc265e5d"
+      }
+    },
+    {
+      "id": "89ea835f-44cb-4a88-a16a-ef50d867d0ad",
+      "timestamp": "2025-10-06T13:44:50.283071",
+      "type": "branch_create",
+      "source": "quantum_system",
+      "data": {
+        "branch_id": "49f03b6f-8659-48e6-a5df-6fc5b18ca74c",
+        "probability": 0.3,
+        "action_id": "2f6b2bbf-f281-4e5e-b375-17b62294a378"
+      }
+    },
+    {
+      "id": "4192986b-d72a-476b-a714-ec5848db43f2",
+      "timestamp": "2025-10-06T13:44:50.283106",
+      "type": "branch_create",
+      "source": "quantum_system",
+      "data": {
+        "branch_id": "6966c2c1-7060-4123-89b6-712e8cba683f",
+        "probability": 0.3,
+        "action_id": "7a5be23c-5949-4a44-b74d-741d5a09a549"
+      }
+    },
+    {
+      "id": "8bd0edf6-369a-4b60-b248-d19068be46fc",
+      "timestamp": "2025-10-06T13:44:50.285146",
+      "type": "prediction",
+      "source": "prediction_engine",
+      "data": {
+        "prediction_id": "40bce72a-372b-44ff-9da4-a71bc66aff5a",
+        "target_time": "2025-10-06T14:44:50.279703",
+        "predicted_value": 12.999225441800316,
+        "uncertainty": 0.09377259893823005,
+        "model": "linear_trend",
+        "action_id": "4d421c91-491b-4225-afc6-c797b91cd38e"
+      }
+    },
+    {
+      "id": "13224c3f-8a80-4227-bff8-73ee92787ab8",
+      "timestamp": "2025-10-06T13:44:50.285420",
+      "type": "prediction",
+      "source": "prediction_engine",
+      "data": {
+        "prediction_id": "af4d9f9d-4fee-4e1a-9931-3638680d2b08",
+        "target_time": "2025-10-06T15:14:50.279703",
+        "predicted_value": 14.501673888482653,
+        "uncertainty": 0.09377259893823005,
+        "model": "linear_trend",
+        "action_id": "6590720d-d65b-4cb0-a502-c4cae1c83634"
+      }
+    },
+    {
+      "id": "540e45cb-2495-427e-8955-b0be1ec40629",
+      "timestamp": "2025-10-06T13:44:50.285607",
+      "type": "prediction",
+      "source": "prediction_engine",
+      "data": {
+        "prediction_id": "fb4de10c-238a-4377-a029-fc462df8044d",
+        "target_time": "2025-10-06T15:44:50.279703",
+        "predicted_value": 16.004122335164986,
+        "uncertainty": 0.09377259893823005,
+        "model": "linear_trend",
+        "action_id": "e4b9a290-a496-4b2a-a1bd-8f7c3160fa72"
+      }
+    },
+    {
+      "id": "fcda1179-63f6-49a9-9f22-be0bc2695582",
+      "timestamp": "2025-10-06T14:56:50.279703",
+      "type": "reconciliation",
+      "source": "reconciliation_system",
+      "data": {
+        "prediction_id": "40bce72a-372b-44ff-9da4-a71bc66aff5a",
+        "actual_value": 13.153014678159742,
+        "reconciliation_id": "227bc674-159e-4796-98ee-d63c92bb1714",
+        "action_id": "4d421c91-491b-4225-afc6-c797b91cd38e"
+      }
+    },
+    {
+      "id": "8fbce77e-2eee-4d33-aaaf-da6eb492a088",
+      "timestamp": "2025-10-06T15:26:50.279703",
+      "type": "reconciliation",
+      "source": "reconciliation_system",
+      "data": {
+        "prediction_id": "af4d9f9d-4fee-4e1a-9931-3638680d2b08",
+        "actual_value": 14.445294233404157,
+        "reconciliation_id": "e3b80198-f8d6-4882-a448-76ad0f53e13f",
+        "action_id": "6590720d-d65b-4cb0-a502-c4cae1c83634"
+      }
+    },
+    {
+      "id": "90af9042-7f9a-4de1-80ba-e5df45b467ff",
+      "timestamp": "2025-10-06T13:44:50.286197",
+      "type": "branch_collapse",
+      "source": "quantum_system",
+      "data": {
+        "observable": "market_trend",
+        "value": "bull_market",
+        "uncertainty": 0.09999999999999998,
+        "collapsed_branch_id": "6966c2c1-7060-4123-89b6-712e8cba683f",
+        "action_id": "ee9d235a-99e5-43a8-926d-f46070ef6ffb"
+      }
+    }
+  ]
+}
